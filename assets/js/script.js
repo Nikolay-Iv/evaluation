@@ -2,10 +2,14 @@
 import $ from 'jquery';
 window.$ = $;
 
+// Modules
+import select from './modules/select';
+import accordion from './modules/accordion';
 
 const app = {
     ready() {
-        
+        select();
+        accordion();
     },
 
     load() {

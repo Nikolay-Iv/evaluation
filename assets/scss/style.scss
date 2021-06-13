@@ -1,7 +1,7 @@
     /**
 * Vendors
 */
-
+@import '~normalize.css';
 
 /**
 * Abstracts
@@ -21,3 +21,14 @@
 /*
 * Components
 */
+@import "components/icon";
+@import "components/title";
+@import "components/button";
+@import "components/page";
+@import "components/content";
+@import "components/container";
+@import "components/work-area";
+@import "components/form";
+@import "components/select";
+@import "components/accordions";
+@import "components/accordion";

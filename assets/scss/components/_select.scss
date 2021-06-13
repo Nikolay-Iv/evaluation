@@ -1,0 +1,108 @@
+.select {
+    position: relative;
+
+    &--open & {
+        &__body {
+            display: block;
+        }
+
+        &__icon {
+            transform: rotate(180deg);
+
+            color: $primary-color;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        height: rem(44px);
+        padding-right: rem(14px);
+        padding-left: rem(14px);
+
+        cursor: url(../images/cursor.png), pointer;
+
+        border: rem(1px) solid $alto;
+        border-radius: rem($border-radius);
+        background-color: $white;
+    }
+
+    &__current {
+        position: relative;
+
+        font-size: rem($font-size-small);
+        line-height: rem(17px);
+
+        overflow: hidden;
+        flex-grow: 1;
+
+        white-space: nowrap;
+
+        color: $black;
+
+        &::after {
+            position: absolute;
+            right: 0;
+
+            width: 30%;
+            height: 100%;
+
+            content: "";
+	        pointer-events: none;
+
+            background: linear-gradient(to right, rgba(255, 255, 255, 0), white 100%);
+        }
+
+        &--light {
+            color: $alto;
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+
+        margin-left: rem(10px);
+
+        transition: transform $transition;
+
+        color: $black;
+        
+        &-pic {
+            position: relative;
+        }
+    }
+
+    &__body {
+        position: absolute;
+        z-index: $z-index-medium;
+        top: 100%;
+        right: 0;
+        left: 0;
+
+        display: none;
+
+        border: rem(1px) solid $alto;
+        border-top: none;
+        border-radius: rem($border-radius);
+        background-color: $white;
+    }
+
+    &__item {
+        font-size: rem($font-size-tiny);
+        line-height: rem(16px);
+
+        padding: rem(6px) rem(14px);
+
+        cursor: url(../images/cursor.png), pointer;
+        transition: color $transition,
+                    background-color $transition;
+
+        color: $black;
+
+        &:hover {
+            color: $white;
+            background-color: $primary-color;
+        }
+    }
+}

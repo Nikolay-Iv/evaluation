@@ -1,0 +1,41 @@
+.accordions {
+    $horizontal-gutter: 20px;
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @media #{$screen-big} {
+            flex-direction: row;
+
+            margin-right: rem(-$horizontal-gutter);
+            margin-left: rem(-$horizontal-gutter);
+        }
+    }
+
+    &__block {
+        width: 100%;
+        margin-bottom: rem(20px);
+
+        @media #{$screen-big} {
+            width: percentage(1 / 2);
+            margin-bottom: 0;
+            padding-right: rem($horizontal-gutter);
+            padding-left: rem($horizontal-gutter);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item {
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

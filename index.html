@@ -8,8 +8,130 @@
         <link rel="stylesheet" href="public/css/style.css" />
     </head>
 
-    <body>
+    <body class="page">
+        <main class="page__content">
+            <div class="content">
+                <div class="content__section">
+                    <div class="container">
+                        <h1 class="content__title title title--huge">Составь <span class="content__title-special">карту маршрута</span></h1>
 
+                        <div class="content__work-area work-area">
+                            <div class="work-area__wrapper">
+                                <form action="" class="form">
+                                    <div class="form__block">
+                                        <header class="form__header">
+                                            <div class="form__counter">
+                                                <span class="form__counter-label">1</span>
+                                            </div>
+
+                                            <div class="form__title title title--big">
+                                                Введите свой опыт
+                                            </div>
+                                        </header>
+
+                                        <div class="form__body">
+                                            <ul class="form__list">
+                                                <li class="form__item">
+                                                    <div class="form__field">
+                                                        <input type="text" id="last_name" class="form__input" name="last_name" placeholder="Введите фаимлию...">
+                                                        <label for="last_name" class="form__label">Фамилия</label>
+                                                    </div>
+                                                </li>
+
+                                                <li class="form__item">
+                                                    <div class="form__field">
+                                                        <input type="text" id="first_name" class="form__input" name="first_name" placeholder="Введите имя...">
+                                                        <label for="first_name" class="form__label">Имя</label>
+                                                    </div>
+                                                </li>
+
+                                                <li class="form__item">
+                                                    <div class="form__field">
+                                                        <input type="text" id="patronymic" class="form__input" name="patronymic" placeholder="Введите отчество...">
+                                                        <label for="patronymic" class="form__label">Отчество</label>
+                                                    </div>
+                                                </li>
+
+                                                <li class="form__item form__item--big">
+                                                    <div class="form__field">
+                                                        <div class="select">
+                                                            <header class="select__header">
+                                                                <div class="select__current select__current--light">
+                                                                    Не выбрано
+                                                                </div>
+
+                                                                <div class="select__icon">
+                                                                    <svg class="select__icon-pic icon icon--arrow">
+                                                                        <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                                                                    </svg>
+                                                                </div>                                                        
+                                                            </header>
+
+                                                            <div class="select__body">
+                                                                <ul class="select__list">
+                                                                    <li class="select__item">Аналитик</li>
+                                                                    <li class="select__item">Python-программист</li>
+                                                                    <li class="select__item">Java-программист</li>
+                                                                    <li class="select__item">Frontend-разработчик</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form__label">
+                                                            Профессия
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="form__item form__item--small">
+                                                    <div class="form__field">
+                                                        <div class="select">
+                                                            <header class="select__header">
+                                                                <div class="select__current select__current--light">
+                                                                    Не выбрано
+                                                                </div>
+
+                                                                <div class="select__icon">
+                                                                    <svg class="select__icon-pic icon icon--arrow">
+                                                                        <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                                                                    </svg>
+                                                                </div>                                                        
+                                                            </header>
+
+                                                            <div class="select__body">
+                                                                <ul class="select__list">
+                                                                    <li class="select__item">Junior</li>
+                                                                    <li class="select__item">Middle</li>
+                                                                    <li class="select__item">Senior</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form__label">
+                                                            Квалификация
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <footer class="form__footer">
+                                            <div class="form__list form__list--right">
+                                                <div class="form__item form__item--small">
+                                                    <button class="form__button button button--primary" type="submit">
+                                                        Далее
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         
         <script src="public/js/script.js"></script>
     </body>

@@ -1,12 +1,44 @@
 /**
 * Colors
 */
+$white: #fff;
+$black: #000;
+$alabaster: #fafafa;
+$alto: #CFCFCF;
+$blue-ribbon: #0066ff;
+$nobel: #b5b5b5;
+
+$primary-color: $blue-ribbon;
+$background-content-color: $alabaster;
 
 
 /**
 * Fonts
 */
+$font-path: "../fonts";
+
+$font-family-custom: "HelveticaNeue";
+$font-family-default: sans-serif;
+
+$font-family: $font-family-custom, $font-family-default;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
 $font-size-base: 16px;
+$font-size-more-tiny: 13px;
+$font-size-tiny: 14px;
+$font-size-small: 15px;
+$font-size-medium: 20px;
+$font-size-big: 24px;
+$font-size-large: 32px;
+$font-size-huge: 36px;
+
+$line-height-medium: 24px;
+$line-height-big: 30px;
+$line-height-large: 40px;
+$line-height-huge: 44px;
 
 
 /**
@@ -19,5 +51,32 @@ $screen-big: "(min-width: 1280px)";
 /**
 * Layout
 */
-$container-max-width-desktop: rem(1170px);
-$container-padding: rem(15px);
+$container-max-width-desktop: 1170px;
+$container-padding: 15px;
+
+/**
+* Box-shadows
+*/
+// $box-shadow: 0 rem(10px) rem(20px) rgba($black, 0.1);
+$box-shadow: rem(0px) rem(3px) rem(10px) rgba(#000, .05);
+
+$box-shadow-double: rem(0px) rem(12px) rem(40px) rgba(#000, .03),
+                    rem(0px) rem(3px) rem(10px) rgba(#a4a4a4, .03);
+
+/**
+* Transitions and Animations
+*/
+$transition-duration: .2s;
+$transition-timing: linear;
+$transition: $transition-duration $transition-timing;
+
+/**
+* Radius
+*/
+$border-radius: 2px;
+$border-radius-medium: 5px;
+
+/**
+* Z-indexes
+*/
+$z-index-medium: 10;

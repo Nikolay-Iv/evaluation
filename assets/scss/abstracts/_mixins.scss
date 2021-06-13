@@ -11,3 +11,26 @@
         font-family: "object-fit: #{$fit}";
     }
 }
+
+@mixin hide-marker {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: rem(1px);
+    height: rem(1px);
+    margin: rem(-1px);
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    clip-path: inset(100%);
+}
+
+@mixin full-wrapper {
+    margin-right: calc((100vw - 100%) / -2);
+    margin-left: calc((100vw - 100%) / -2);
+}
