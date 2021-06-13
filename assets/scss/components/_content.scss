@@ -1,0 +1,22 @@
+.content {
+    &__title {
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-special {
+            color: $primary-color;
+        }
+    }
+
+    &__work-area {
+        @include full-wrapper;
+
+        @media #{$screen-big} {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.work-area {
+    background-color: $white;
+    box-shadow: $box-shadow;
+
+    @media #{$screen-big} {
+        border-radius: rem($border-radius-medium);
+        background-color: $white;
+        box-shadow: $box-shadow-double;
+    }
+
+    &__wrapper {
+        $padding-lr: rem(20px);
+
+        padding-left: $padding-lr;
+        padding-right: $padding-lr;
+
+        padding-top: rem(30px);
+        padding-bottom: rem(50px);
+
+        @media #{$screen-medium} {
+            padding: rem(50px) rem(60px);
+        }
+
+        @media #{$screen-big} {
+            $padding-lr: rem(110px);
+
+            padding-left:  $padding-lr;
+            padding-right:  $padding-lr;
+        }
+    }
+}

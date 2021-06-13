@@ -1,0 +1,13 @@
+.icon {
+    display: block;
+
+    &--arrow {
+        width: rem(8px);
+        height: rem(5px);
+    }
+
+    &--check {
+        width: rem(11px);
+        height: rem(8px);
+    }
+}

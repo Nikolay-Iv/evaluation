@@ -1,0 +1,204 @@
+.form {
+    $vertical-gutter: 8px;
+    $horizontal-gutter: 6px;
+
+    &__block {
+        margin-bottom: rem(40px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: rem(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__counter {
+        $size: 24px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: rem($size);
+        height: rem($size);
+        margin-right: rem(8px);
+
+        border-radius: 50%;
+        background-color: $primary-color;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &-label {
+            font-size: rem($font-size-base);
+            font-weight: $font-weight-bold;
+
+            color: $white;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin: rem(-$vertical-gutter) rem(-$horizontal-gutter);
+
+        &--right {
+            justify-content: flex-end;
+        }
+    }
+
+    &__item {
+        width: 100%;
+        padding: rem($vertical-gutter) rem($horizontal-gutter);
+
+        &--full-desktop {
+            @media #{$screen-big} {
+                width: 100%;
+            }
+        }
+
+        &--small {
+            @media #{$screen-medium} {
+                width: percentage(1 / 4);
+            }
+        }
+
+        &--big {
+            @media #{$screen-medium} {
+                width: percentage(3 / 4);
+            }
+        }
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+    }
+
+    &__input {
+        $padding-rl: 14px;
+
+        display: block;
+
+        width: 100%;
+        height: rem(44px);
+        padding-right: rem($padding-rl);
+        padding-left: rem($padding-rl);
+
+        color: $black;
+        border: rem(1px) solid $alto;
+        border-radius: rem($border-radius);
+        background-color: $white;
+
+        &:focus {
+            border: rem(1px) solid $primary-color;
+        }
+
+        &::placeholder {
+            color: $alto;
+        }
+
+        &--textarea {
+            $padding-tb: rem(13px);
+
+            height: rem(80px);
+            padding-top: $padding-tb;
+            padding-bottom: $padding-tb;
+
+            resize: none;
+        }
+    }
+
+    &__label {
+        font-size: rem($font-size-more-tiny);
+
+        flex-grow: 1;
+        order: -1;
+
+        margin-bottom: rem(8px);
+    }
+
+    &__checkbox {
+        &-input {
+            @include hide-marker;
+        }
+
+        &-label {
+            display: flex;
+            align-items: center;
+
+            cursor: url(../images/cursor.png), pointer;
+        }
+
+        &-text {
+            font-size: rem($font-size-more-tiny);
+            line-height: rem(16px);
+        }
+
+        &-icon {
+            $size: rem(24px);
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            justify-content: center;
+
+            width: $size;
+            height: $size;
+            margin-right: rem(12px);
+
+            color: transparent;
+            border: rem(2px) solid $alto;
+
+            &-pic {
+                position: relative;
+
+                display: none;
+            }
+        }
+
+        &-input:checked + &-label & {
+            &-icon {
+                color: $white;
+                border: rem(2px) solid $primary-color;
+                background-color: $primary-color;
+
+                &-pic {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: rem(25px);
+    }
+
+    &__button {
+        margin-right: rem(15px);
+
+        @media #{$screen-medium} {
+            width: 100%;
+            margin-right: rem(30px);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

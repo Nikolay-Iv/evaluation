@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+
+    padding: rem(12px) rem(30px);
+
+    cursor: url(../images/cursor.png), pointer;
+
+    color: $white;
+    border-radius: rem($border-radius);
+
+    &--primary {
+        background-color: $primary-color;
+
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &:disabled {
+        opacity: 0.3;
+    }
+}
