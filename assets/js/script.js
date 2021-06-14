@@ -3,13 +3,14 @@ import $ from 'jquery';
 window.$ = $;
 
 // Modules
-import select from './modules/select';
 import accordion from './modules/accordion';
+import createSelect from './modules/createSelect';
+
 
 const app = {
     ready() {
-        select();
         accordion();
+        createSelect();
     },
 
     load() {
