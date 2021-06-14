@@ -1,0 +1,48 @@
+.step {
+    display: flex;
+    align-items: center;
+
+    @media #{$screen-medium} {
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 80%;
+    }
+
+    @media #{$screen-big} {
+        width: auto;
+    }
+
+    &__count {
+        margin-right: rem(35px);
+
+        @media #{$screen-medium} {
+            margin-right: 0;
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__number {
+        $size: 40px;
+
+        font-size: rem($font-size-big);
+        line-height: rem($line-height-big);
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: rem($size);
+        height: rem($size);
+
+        color: $primary-color;
+        border: rem(2px) solid $primary-color;
+        border-radius: 50%;
+    }
+
+    &__text {
+        font-size: rem($font-size-medium);
+        font-weight: $font-weight-bold;
+        line-height: rem($line-height-medium);
+    }
+}
